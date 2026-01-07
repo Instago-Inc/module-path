@@ -1,0 +1,17 @@
+{
+  "name": "@instago/path",
+  "version": "1.0.0",
+  "description": "Module path",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "instago",
+    "path"
+  ],
+  "files": [
+    "index.js",
+    "ReadMe.MD",
+    "LICENSE"
+  ]
+}

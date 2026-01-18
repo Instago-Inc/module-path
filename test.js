@@ -1,5 +1,5 @@
-const t = require('utest@1.0.0');
-const pathx = require('path@1.0.0');
+const t = require('utest@latest');
+const pathx = require('path@latest');
 
 t.test('joinURL basics', () => {
   t.expect(pathx.joinURL('a', 'b')).toBe('a/b');

@@ -1,15 +1,26 @@
-# @instago/path
+# module/path - V8 module
 
-Tiny URL joiner to safely stitch path segments without duplicate slashes.
+Join two URL segments safely without worrying about duplicate slashes. This module is intentionally small and focused so you can keep your flow code clean and readable.
 
-- Version: 1.0.0
-- Entry: index.js
-- Exports: `{ joinURL }`
-- Dependencies: none
+It runs in the hgi-v8 runtime used by Instago workflows. Learn more at https://instago.ai.
 
-## Example
+## Technical reference
+
+### Exports
+- `joinURL(a, b)` -> string
+
+### Usage
 ```js
-const { joinURL } = require('path@1.0.0');
+const { joinURL } = require('path@latest');
+```
 
-joinURL('https://example.com/', '/folder/file'); // -> https://example.com/folder/file
+### Configuration
+No configuration or environment variables.
+
+### Examples
+```js
+const { joinURL } = require('path@latest');
+
+const url = joinURL('https://example.com/', '/folder/file');
+// url: 'https://example.com/folder/file'
 ```
